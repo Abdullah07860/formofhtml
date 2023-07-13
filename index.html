@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<!-- div is used for break line just like br tag-->
+<!-- INPUT TYPE has text,file,email, and many more  -->
+
+<!-- id means identifier i.e iska ye naam hai  -->
+
+<body>
+    <h2>This is form lecture</h2>
+    <form action="backend.php">
+        <label for="abc"> Name :</label>
+        <!-- The used of label is that,now if we will click on (Name : ) then it will directly show us to write there   -->
+        <div>
+            <!-- here which is storing (My name i.e name) will be saved into backend.php by name   -->
+             <input type="text" name="My name " id="abc">
+        </div>
+        <br>
+        <div>
+            Roll number : <input type="text" name="My roll number">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="My email ">
+        </div>
+        <br>
+        <div>
+           Date :  <input type="date" >
+        </div>
+        <br>
+        <div>
+            Only number : <input type="number" name="" id="">
+        </div>
+        <br>
+        <label for="alpha">  Are you eligible ? </label>
+        <div>
+          <input type="checkbox" name="My eligibility" id="alpha" checked>
+            <!-- here CHECKED means that it is ticked before filling the form  -->
+        </div>
+        <br>
+        <div>
+            Gender : Male<input type="radio" name="mygender" id=""> 
+            Female<input type="radio" name="mygender" id=""> 
+            Other<input type="radio" name="mygender" id=""> 
+        </div>
+        <br>
+       Write about yourself : <br> <textarea name="about me" id="" cols="30" rows="10">
+
+        </textarea>
+        <br>
+        <label for="car">Select my Car</label>
+        <select name="mycar" id="car">
+            <option value="swft" > swift </option>
+            <option value="for" selected>fortuner</option>
+            <option value="ring">audi</option>
+        </select>
+        <div>
+           Submit here :  <input type="submit" value="Submit now">
+        </div>
+        <br>
+        <div>
+            Reset now : <input type="reset" value="Reset here" id="">
+        </div>
+    </form>
+</body>
+</html>
